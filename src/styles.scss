@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+.product-cart {
+	position: fixed;
+	right: 1em;
+	top: 73px;
+	width: 350px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: flex;
+		flex-flow: row;
+		padding: 1em;
+		border-bottom: 1px solid #CCC;
+		font-size: 14px;
+	}
+	img {
+		height: 50px;
+		width: auto;
+		margin-right: 1em;
+	}
+}
+
+.product-list-item {
+	h4 {
+		font-size: 16px;
+	}
+	&:hover {
+		transform: scale(1.05);
+		border: 0px solid #35BADB;
+		display: flex;
+		.product-action {
+			visibility: visible ;
+			
+		}
+		
+	}
+
+	.product-action {
+		visibility:hidden;
+		justify-content: flex-end;
+		padding: 0 15px;;
+		
+	}
+	
+
+}
+
+.product-list-image {
+	padding: 1em;
+	height: 250px;
+	img {
+		max-width: 100%;
+	}
+}
+.cart-count {
+	color: #FFF;
+	position: relative;
+	em {
+		height: 24px;
+		background-color: red;
+		font-style: normal;
+		padding: 0;
+		border-radius: 50px;
+		position: absolute;
+		top: -5px;
+		right: -14px;
+		width: 24px;
+		text-align: center;
+		line-height: 24px;
+		color: #FFF;
+		font-weight: bold;
+	}
+}
+.cart-total {
+	padding: 1em;
+	margin: 0;
+	display: flex;
+	flex-flow: row;
+	align-items: normal;
+	justify-content: space-between;
+}
+
